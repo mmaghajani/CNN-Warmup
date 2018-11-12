@@ -52,6 +52,8 @@ class Cifar:
 
     def normalize_data(self):
         self.train.normalize()
+        self.validation.normalize()
+        self.test.normalize()
 
 
 def read_data_sets(url, one_hot=False):
